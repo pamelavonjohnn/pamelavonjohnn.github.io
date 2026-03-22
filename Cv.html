@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamela von Johnn | Ingeniería Civil Industrial</title>
+    <meta name="description" content="Portfolio profesional de Pamela von Johnn Canales - Ingeniería Civil Industrial con Minor en Análisis de Datos. Universidad de La Frontera.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a5f',
+                        secondary: '#d4846c',
+                        accent: '#2c5282',
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-light overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-serif text-2xl font-bold text-primary">PVJ</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="nav-link text-gray-700 hover:text-primary font-medium transition">Inicio</a>
+                    <a href="#perfil" class="nav-link text-gray-700 hover:text-primary font-medium transition">Perfil</a>
+                    <a href="#educacion" class="nav-link text-gray-700 hover:text-primary font-medium transition">Educación</a>
+                    <a href="#experiencia" class="nav-link text-gray-700 hover:text-primary font-medium transition">Experiencia</a>
+                    <a href="#congresos" class="nav-link text-gray-700 hover:text-primary font-medium transition">Congresos</a>
+                    <a href="#contacto" class="nav-link text-gray-700 hover:text-primary font-medium transition">Contacto</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#inicio" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">Inicio</a>
+                <a href="#perfil" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">Perfil</a>
+                <a href="#educacion" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">Educación</a>
+                <a href="#experiencia" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">Experiencia</a>
+                <a href="#congresos" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">Congresos</a>
+                <a href="#contacto" class="block px-3 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-orange-50">
+        <!-- Animated Blobs -->
+        <div class="blob bg-primary w-96 h-96 rounded-full top-20 -left-20"></div>
+        <div class="blob bg-secondary w-80 h-80 rounded-full bottom-20 -right-20 animation-delay-2000"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-6">
+                        <i class="fas fa-graduation-cap mr-2"></i> Estudiante de Ingeniería Civil Industrial
+                    </div>
+                    <h1 class="font-serif text-5xl md:text-7xl font-bold text-primary mb-6 leading-tight">
+                        Pamela <br>
+                        <span class="gradient-text">von Johnn</span> Canales
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Minor en Análisis de Datos | Universidad de La Frontera <br>
+                        <span class="text-secondary font-medium">Versatilidad técnica · Trabajo multidisciplinario · Mejora continua</span>
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <a href="mailto:pame.vonjohnn@gmail.com" class="flex items-center gap-2 text-gray-600 hover:text-primary transition">
+                            <i class="fas fa-envelope"></i> pame.vonjohnn@gmail.com
+                        </a>
+                        <a href="tel:+56975489215" class="flex items-center gap-2 text-gray-600 hover:text-primary transition">
+                            <i class="fas fa-phone"></i> +56 9 7548 9215
+                        </a>
+                        <span class="flex items-center gap-2 text-gray-600">
+                            <i class="fas fa-map-marker-alt"></i> Temuco, Chile
+                        </span>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <a href="#contacto" class="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-accent transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Contactar
+                        </a>
+                        <a href="#experiencia" class="px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition">
+                            Ver Experiencia
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="relative w-full aspect-square max-w-md mx-auto">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full opacity-20 blur-2xl transform rotate-12"></div>
+                        <div class="relative bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-primary/5 p-4 rounded-2xl text-center hover-lift">
+                                    <i class="fas fa-chart-line text-3xl text-primary mb-2"></i>
+                                    <p class="text-sm font-semibold text-gray-700">Análisis de Datos</p>
+                                </div>
+                                <div class="bg-secondary/10 p-4 rounded-2xl text-center hover-lift">
+                                    <i class="fas fa-cogs text-3xl text-secondary mb-2"></i>
+                                    <p class="text-sm font-semibold text-gray-700">Optimización</p>
+                                </div>
+                                <div class="bg-blue-50 p-4 rounded-2xl text-center hover-lift">
+                                    <i class="fas fa-robot text-3xl text-blue-600 mb-2"></i>
+                                    <p class="text-sm font-semibold text-gray-700">RobotStudio</p>
+                                </div>
+                                <div class="bg-orange-50 p-4 rounded-2xl text-center hover-lift">
+                                    <i class="fas fa-language text-3xl text-orange-600 mb-2"></i>
+                                    <p class="text-sm font-semibold text-gray-700">Trilingüe</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 pt-6 border-t border-gray-100">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-medium text-gray-600">Excel / Softwares</span>
+                                    <span class="text-sm font-bold text-primary">Avanzado</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full skill-bar" style="width: 0%" data-width="90%"></div>
+                                </div>
+                                
+                                <div class="flex justify-between items-center mb-2 mt-3">
+                                    <span class="text-sm font-medium text-gray-600">Gestión de Operaciones</span>
+                                    <span class="text-sm font-bold text-secondary">Intermedio</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-secondary h-2 rounded-full skill-bar" style="width: 0%" data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#perfil" class="text-primary hover:text-secondary transition">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="perfil" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="md:col-span-1" data-aos="fade-up">
+                    <h2 class="font-serif text-4xl font-bold text-primary mb-6">Perfil Profesional</h2>
+                    <div class="w-20 h-1 bg-secondary mb-6"></div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Estudiante comprometida y responsable con formación en múltiples softwares y herramientas de análisis.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-2">
+                                <span class="text-2xl font-bold text-primary">4+</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Años de<br>experiencia</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-2">
+                                <span class="text-2xl font-bold text-secondary">3</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Idiomas<br>dominados</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-slate-50 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full -mr-32 -mt-32"></div>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6 relative z-10">
+                            Mi formación académica y experiencia práctica me han permitido trabajar con <strong class="text-primary">múltiples softwares</strong>, lo que me confiere una gran <strong class="text-secondary">versatilidad</strong> para abordar diversas problemáticas y encontrar las mejores soluciones.
+                        </p>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed mb-8 relative z-10">
+                            Disfruto trabajar en diferentes áreas con <strong>equipos multidisciplinarios</strong>, donde mis habilidades de comunicación y dominio de idiomas me permiten desenvolverme en múltiples escenarios. Estoy siempre abierta a aprender cosas nuevas, afrontar desafíos y valoro profundamente recibir retroalimentación para mejorar continuamente.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10">
+                            <div class="flex items-center gap-2 text-gray-700">
+                                <i class="fas fa-check-circle text-secondary"></i>
+                                <span class="text-sm font-medium">Excel Avanzado</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-700">
+                                <i class="fas fa-check-circle text-secondary"></i>
+                                <span class="text-sm font-medium">RobotStudio</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-700">
+                                <i class="fas fa-check-circle text-secondary"></i>
+                                <span class="text-sm font-medium">Análisis de Datos</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-700">
+                                <i class="fas fa-check-circle text-secondary"></i>
+                                <span class="text-sm font-medium">Gestión de Inventario</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section id="educacion" class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,_#1e3a5f_0%,_transparent_50%)]"></div>
+        </div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-serif text-4xl font-bold text-primary mb-4">Formación Académica</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Trayectoria educativa enfocada en Ingeniería Civil Industrial con especialización en Análisis de Datos</p>
+            </div>
+
+            <div class="relative">
+                <div class="timeline-line"></div>
+                
+                <!-- Timeline Item 1 -->
+                <div class="relative mb-12" data-aos="fade-up">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:text-right pr-8 hidden md:block">
+                            <h3 class="font-serif text-xl font-bold text-primary">Ingeniería Civil Industrial</h3>
+                            <p class="text-secondary font-semibold">2021 - Actualidad</p>
+                        </div>
+                        
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
+                        <div class="md:hidden absolute left-5 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-lg z-10"></div>
+                        
+                        <div class="md:w-5/12 pl-8 md:pl-8 ml-8 md:ml-0">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg hover-lift">
+                                <div class="md:hidden mb-2">
+                                    <h3 class="font-serif text-lg font-bold text-primary">Ingeniería Civil Industrial</h3>
+                                    <p class="text-secondary font-semibold text-sm">2021 - Actualidad</p>
+                                </div>
+                                <p class="text-gray-600 mb-2"><i class="fas fa-university mr-2 text-primary"></i>Universidad de La Frontera</p>
+                                <span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs rounded-full font-semibold">En curso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative mb-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="md:flex items-center justify-between flex-row-reverse">
+                        <div class="md:w-5/12 md:text-left pl-8 hidden md:block">
+                            <h3 class="font-serif text-xl font-bold text-primary">Minor en Análisis de Datos</h3>
+                            <p class="text-secondary font-semibold">Actualidad</p>
+                        </div>
+                        
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
+                        <div class="md:hidden absolute left-5 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10"></div>
+                        
+                        <div class="md:w-5/12 pr-8 md:text-right pl-8 md:pl-0 ml-8 md:ml-0 md:mr-8">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg hover-lift text-left md:text-right">
+                                <div class="md:hidden mb-2">
+                                    <h3 class="font-serif text-lg font-bold text-primary">Minor en Análisis de Datos</h3>
+                                    <p class="text-secondary font-semibold text-sm">Actualidad</p>
+                                </div>
+                                <p class="text-gray-600 mb-2"><i class="fas fa-university mr-2 text-primary"></i>Universidad de La Frontera</p>
+                                <span class="inline-block px-3 py-1 bg-secondary/10 text-secondary text-xs rounded-full font-semibold">Especialización</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative mb-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:text-right pr-8 hidden md:block">
+                            <h3 class="font-serif text-xl font-bold text-primary">Licenciado en Ciencias de la Ingeniería</h3>
+                            <p class="text-secondary font-semibold">2025</p>
+                        </div>
+                        
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
+                        <div class="md:hidden absolute left-5 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10"></div>
+                        
+                        <div class="md:w-5/12 pl-8 md:pl-8 ml-8 md:ml-0">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg hover-lift">
+                                <div class="md:hidden mb-2">
+                                    <h3 class="font-serif text-lg font-bold text-primary">Licenciado en Ciencias de la Ingeniería</h3>
+                                    <p class="text-secondary font-semibold text-sm">2025</p>
+                                </div>
+                                <p class="text-gray-600 mb-2"><i class="fas fa-university mr-2 text-primary"></i>Universidad de La Frontera</p>
+                                <span class="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-semibold">Titulado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative mb-12" data-aos="fade-up" data-aos-delay="300">
+                    <div class="md:flex items-center justify-between flex-row-reverse">
+                        <div class="md:w-5/12 md:text-left pl-8 hidden md:block">
+                            <h3 class="font-serif text-xl font-bold text-primary">Bachillerato de Ciencias y Humanidades</h3>
+                            <p class="text-secondary font-semibold">2022</p>
+                        </div>
+                        
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-400 rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
+                        <div class="md:hidden absolute left-5 w-4 h-4 bg-gray-400 rounded-full border-4 border-white shadow-lg z-10"></div>
+                        
+                        <div class="md:w-5/12 pr-8 md:text-right pl-8 md:pl-0 ml-8 md:ml-0 md:mr-8">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg hover-lift text-left md:text-right">
+                                <div class="md:hidden mb-2">
+                                    <h3 class="font-serif text-lg font-bold text-primary">Bachillerato de Ciencias y Humanidades</h3>
+                                    <p class="text-secondary font-semibold text-sm">2022</p>
+                                </div>
+                                <p class="text-gray-600 mb-2"><i class="fas fa-university mr-2 text-primary"></i>Universidad Católica de Temuco</p>
+                                <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full font-semibold">Completado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="relative" data-aos="fade-up" data-aos-delay="400">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:text-right pr-8 hidden md:block">
+                            <h3 class="font-serif text-xl font-bold text-primary">Programa del Diploma IB</h3>
+                            <p class="text-secondary font-semibold">2017 - 2019</p>
+                        </div>
+                        
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-400 rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
+                        <div class="md:hidden absolute left-5 w-4 h-4 bg-gray-400 rounded-full border-4 border-white shadow-lg z-10"></div>
+                        
+                        <div class="md:w-5/12 pl-8 md:pl-8 ml-8 md:ml-0">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg hover-lift">
+                                <div class="md:hidden mb-2">
+                                    <h3 class="font-serif text-lg font-bold text-primary">Programa del Diploma IB</h3>
+                                    <p class="text-secondary font-semibold text-sm">2017 - 2019</p>
+                                </div>
+                                <p class="text-gray-600 mb-2"><i class="fas fa-school mr-2 text-primary"></i>Colegio Alemán de Temuco</p>
+                                <p class="text-sm text-gray-500 mb-2">Proyecto CAS (2018) · Práctica médica en Alemania (2017)</p>
+                                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full font-semibold">Bachillerato Internacional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-serif text-4xl font-bold text-primary mb-4">Experiencia Laboral</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Trayectoria profesional combinando docencia universitaria y experiencia industrial</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Job 1 -->
+                <div class="group relative bg-slate-50 rounded-2xl p-8 hover-lift overflow-hidden" data-aos="fade-up">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary">
+                            <i class="fas fa-chalkboard-teacher text-2xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-primary mb-2">Ayudante Introducción al Análisis de Datos</h3>
+                        <p class="text-secondary font-semibold mb-4">2025 | Universidad de La Frontera</p>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Preparación de material académico</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Apoyo durante clases teóricas y prácticas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="group relative bg-slate-50 rounded-2xl p-8 hover-lift overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 text-secondary">
+                            <i class="fas fa-robot text-2xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-primary mb-2">Ayudante Gestión de Operaciones</h3>
+                        <p class="text-secondary font-semibold mb-4">2025 | Universidad de La Frontera</p>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Guía de sección práctica utilizando software <strong>RobotStudio</strong></span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Simulación de procesos industriales</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="group relative bg-slate-50 rounded-2xl p-8 hover-lift overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                            <i class="fas fa-clipboard-list text-2xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-primary mb-2">Práctica de Estudios</h3>
+                        <p class="text-secondary font-semibold mb-4">2024 | CZ Tokosova</p>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Descripción de perfiles de cargo</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Uso avanzado de <strong>Excel</strong> para análisis</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="group relative bg-slate-50 rounded-2xl p-8 hover-lift overflow-hidden md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-orange-100 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-6 text-orange-600">
+                            <i class="fas fa-store text-2xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-primary mb-2">Gestión de Sucursal Bruma</h3>
+                        <p class="text-secondary font-semibold mb-4">2024 - 2025 | CZ Tokosova</p>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Gestión de inventario y stock</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Atención al público y experiencia cliente</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Mantenimiento técnico en sucursales</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Congress & Training Section -->
+    <section id="congresos" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-serif text-4xl font-bold text-primary mb-4">Formación Complementaria</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Participación en congresos, talleres y escuelas de especialización</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Congress 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift flex gap-4" data-aos="fade-up">
+                    <div class="flex-shrink-0 w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                        <i class="fas fa-award text-2xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full font-bold">2025</span>
+                            <span class="text-xs text-gray-500">Presentación</span>
+                        </div>
+                        <h3 class="font-bold text-primary mb-1">Congreso CITIC</h3>
+                        <p class="text-sm text-gray-600">Ingeniería Transdisciplinaria e Innovación Consciente</p>
+                        <p class="text-xs text-gray-500 mt-2">Universidad de La Frontera</p>
+                    </div>
+                </div>
+
+                <!-- Congress 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift flex gap-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600">
+                        <i class="fas fa-snowflake text-2xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full font-bold">2025</span>
+                            <span class="text-xs text-gray-500">Escuela</span>
+                        </div>
+                        <h3 class="font-bold text-primary mb-1">14ª Escuela de Invierno</h3>
+                        <p class="text-sm text-gray-600">Sistemas de Ingeniería</p>
+                        <p class="text-xs text-gray-500 mt-2">Universidad de Chile</p>
+                    </div>
+                </div>
+
+                <!-- Congress 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift flex gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex-shrink-0 w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center text-green-600">
+                        <i class="fas fa-route text-2xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full font-bold">2024</span>
+                            <span class="text-xs text-gray-500">Taller</span>
+                        </div>
+                        <h3 class="font-bold text-primary mb-1">Optimización de Rutas de Despacho</h3>
+                        <p class="text-sm text-gray-600">Vehículos de reparto - CIG</p>
+                        <p class="text-xs text-gray-500 mt-2">Universidad de La Frontera</p>
+                    </div>
+                </div>
+
+                <!-- Congress 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift flex gap-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex-shrink-0 w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600">
+                        <i class="fas fa-certificate text-2xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="px-2 py-1 bg-secondary/10 text-secondary text-xs rounded-full font-bold">2025</span>
+                            <span class="text-xs text-gray-500">Workshop</span>
+                        </div>
+                        <h3 class="font-bold text-primary mb-1">Workshop Calidad 360</h3>
+                        <p class="text-sm text-gray-600">Congreso de Ingeniería Global (CIG)</p>
+                        <p class="text-xs text-gray-500 mt-2">Universidad de La Frontera</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="mt-16 bg-white rounded-3xl p-8 shadow-lg" data-aos="fade-up">
+                <h3 class="font-serif text-2xl font-bold text-primary mb-8 text-center">Idiomas</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary text-3xl font-bold">
+                            ES
+                        </div>
+                        <h4 class="font-bold text-primary mb-1">Español</h4>
+                        <p class="text-sm text-gray-600">Nativo</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mt-2 max-w-xs mx-auto">
+                            <div class="bg-primary h-2 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto bg-secondary/10 rounded-full flex items-center justify-center mb-4 text-secondary text-3xl font-bold">
+                            DE
+                        </div>
+                        <h4 class="font-bold text-primary mb-1">Alemán</h4>
+                        <p class="text-sm text-gray-600">Intermedio (B1-B2)</p>
+                        <p class="text-xs text-gray-500 mt-1">Experiencia práctica en Alemania (2017)</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mt-2 max-w-xs mx-auto">
+                            <div class="bg-secondary h-2 rounded-full" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4 text-blue-600 text-3xl font-bold">
+                            EN
+                        </div>
+                        <h4 class="font-bold text-primary mb-1">Inglés</h4>
+                        <p class="text-sm text-gray-600">Intermedio (B1-B2)</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mt-2 max-w-xs mx-auto">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 bg-primary text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">¿Trabajemos juntos?</h2>
+            <p class="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
+                Estoy abierta a oportunidades de práctica profesional, proyectos de análisis de datos y colaboraciones multidisciplinarias.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <a href="mailto:pame.vonjohnn@gmail.com" class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition border border-white/20">
+                    <i class="fas fa-envelope text-3xl text-secondary mb-4 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-semibold mb-2">Email</h3>
+                    <p class="text-sm text-blue-100">pame.vonjohnn@gmail.com</p>
+                </a>
+                
+                <a href="tel:+56975489215" class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition border border-white/20">
+                    <i class="fas fa-phone text-3xl text-secondary mb-4 group-hover:scale-110 transition-transform block"></i>
+                    <h3 class="font-semibold mb-2">Teléfono</h3>
+                    <p class="text-sm text-blue-100">+56 9 7548 9215</p>
+                </a>
+                
+                <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                    <i class="fas fa-map-marker-alt text-3xl text-secondary mb-4 block"></i>
+                    <h3 class="font-semibold mb-2">Ubicación</h3>
+                    <p class="text-sm text-blue-100">Temuco, Chile</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-6">
+                <a href="https://www.linkedin.com/in/pamela-von-johnn" target="_blank" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition group">
+                    <i class="fab fa-linkedin-in text-xl group-hover:scale-110 transition-transform"></i>
+                </a>
+                <a href="https://github.com/pamelavonjohnn" target="_blank" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition group">
+                    <i class="fab fa-github text-xl group-hover:scale-110 transition-transform"></i>
+                </a>
+                <a href="mailto:pame.vonjohnn@gmail.com" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition group">
+                    <i class="fas fa-envelope text-xl group-hover:scale-110 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-400 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-serif text-xl font-bold text-white">PVJ</span>
+                <span class="text-sm">Pamela von Johnn Canales</span>
+            </div>
+            <p class="text-sm">© 2025 - Ingeniería Civil Industrial</p>
+            <p class="text-xs text-gray-600">Diseñado para GitHub Pages</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
