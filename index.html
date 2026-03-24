@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pamela von Johnn | Ingeniería Civil Industrial</title>
     <meta name="description" content="Portfolio profesional de Pamela von Johnn Canales - Ingeniería Civil Industrial con Minor en Análisis de Datos. Universidad de La Frontera.">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -39,25 +39,25 @@
             }
         }
     </script>
-    
+
     <style>
         html {
             scroll-behavior: smooth;
         }
-        
+
         .gradient-text {
             background: linear-gradient(135deg, #1e3a5f 0%, #d4846c 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .glass-card {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        
+
         .timeline-line {
             position: absolute;
             left: 50%;
@@ -67,30 +67,30 @@
             background: linear-gradient(to bottom, #1e3a5f, #d4846c);
             z-index: 0;
         }
-        
+
         @media (max-width: 768px) {
             .timeline-line {
                 left: 20px;
             }
         }
-        
+
         .skill-bar {
             transition: width 1.5s ease-out;
         }
-        
+
         .hover-lift {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .hover-lift:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(30, 58, 95, 0.15);
         }
-        
+
         .nav-link {
             position: relative;
         }
-        
+
         .nav-link::after {
             content: '';
             position: absolute;
@@ -101,23 +101,24 @@
             background-color: #d4846c;
             transition: width 0.3s ease;
         }
-        
+
         .nav-link:hover::after {
             width: 100%;
         }
-        
+
         .blob {
             position: absolute;
             filter: blur(40px);
             opacity: 0.4;
             animation: float 10s infinite ease-in-out;
         }
-        
+
         @keyframes float {
             0%, 100% { transform: translate(0, 0) scale(1); }
             50% { transform: translate(20px, -20px) scale(1.1); }
         }
     </style>
+<base target="_blank">
 </head>
 <body class="font-sans text-gray-800 bg-light overflow-x-hidden">
 
@@ -128,7 +129,7 @@
                 <div class="flex-shrink-0 flex items-center">
                     <span class="font-serif text-2xl font-bold text-primary">PVJ</span>
                 </div>
-                
+
                 <div class="hidden md:flex space-x-8">
                     <a href="#inicio" class="nav-link text-gray-700 hover:text-primary font-medium transition">Inicio</a>
                     <a href="#perfil" class="nav-link text-gray-700 hover:text-primary font-medium transition">Perfil</a>
@@ -164,7 +165,7 @@
         <!-- Animated Blobs -->
         <div class="blob bg-primary w-96 h-96 rounded-full top-20 -left-20"></div>
         <div class="blob bg-secondary w-80 h-80 rounded-full bottom-20 -right-20 animation-delay-2000"></div>
-        
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right" data-aos-duration="1000">
@@ -179,7 +180,7 @@
                         Minor en Análisis de Datos | Universidad de La Frontera <br>
                         <span class="text-secondary font-medium">Versatilidad técnica · Trabajo multidisciplinario · Mejora continua</span>
                     </p>
-                    
+
                     <div class="flex flex-wrap gap-4 mb-8">
                         <a href="mailto:pame.vonjohnn@gmail.com" class="flex items-center gap-2 text-gray-600 hover:text-primary transition">
                             <i class="fas fa-envelope"></i> pame.vonjohnn@gmail.com
@@ -201,7 +202,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <div class="relative w-full aspect-square max-w-md mx-auto">
                         <div class="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full opacity-20 blur-2xl transform rotate-12"></div>
@@ -224,7 +225,7 @@
                                     <p class="text-sm font-semibold text-gray-700">Trilingüe</p>
                                 </div>
                             </div>
-                            
+
                             <div class="mt-6 pt-6 border-t border-gray-100">
                                 <div class="flex justify-between items-center mb-2">
                                     <span class="text-sm font-medium text-gray-600">Excel / Softwares</span>
@@ -233,7 +234,7 @@
                                 <div class="w-full bg-gray-200 rounded-full h-2">
                                     <div class="bg-primary h-2 rounded-full skill-bar" style="width: 0%" data-width="90%"></div>
                                 </div>
-                                
+
                                 <div class="flex justify-between items-center mb-2 mt-3">
                                     <span class="text-sm font-medium text-gray-600">Gestión de Operaciones</span>
                                     <span class="text-sm font-bold text-secondary">Intermedio</span>
@@ -247,7 +248,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
             <a href="#perfil" class="text-primary hover:text-secondary transition">
                 <i class="fas fa-chevron-down text-2xl"></i>
@@ -280,19 +281,19 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="md:col-span-2" data-aos="fade-up" data-aos-delay="200">
                     <div class="bg-slate-50 rounded-3xl p-8 md:p-12 relative overflow-hidden">
                         <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full -mr-32 -mt-32"></div>
-                        
+
                         <p class="text-lg text-gray-700 leading-relaxed mb-6 relative z-10">
                             Mi formación académica y experiencia práctica me han permitido trabajar con <strong class="text-primary">múltiples softwares</strong>, lo que me confiere una gran <strong class="text-secondary">versatilidad</strong> para abordar diversas problemáticas y encontrar las mejores soluciones.
                         </p>
-                        
+
                         <p class="text-lg text-gray-700 leading-relaxed mb-8 relative z-10">
                             Disfruto trabajar en diferentes áreas con <strong>equipos multidisciplinarios</strong>, donde mis habilidades de comunicación y dominio de idiomas me permiten desenvolverme en múltiples escenarios. Estoy siempre abierta a aprender cosas nuevas, afrontar desafíos y valoro profundamente recibir retroalimentación para mejorar continuamente.
                         </p>
-                        
+
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10">
                             <div class="flex items-center gap-2 text-gray-700">
                                 <i class="fas fa-check-circle text-secondary"></i>
@@ -322,7 +323,7 @@
         <div class="absolute inset-0 opacity-30">
             <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,_#1e3a5f_0%,_transparent_50%)]"></div>
         </div>
-        
+
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="font-serif text-4xl font-bold text-primary mb-4">Formación Académica</h2>
@@ -331,7 +332,7 @@
 
             <div class="relative">
                 <div class="timeline-line"></div>
-                
+
                 <!-- Timeline Item 1 -->
                 <div class="relative mb-12" data-aos="fade-up">
                     <div class="md:flex items-center justify-between">
@@ -339,10 +340,10 @@
                             <h3 class="font-serif text-xl font-bold text-primary">Ingeniería Civil Industrial</h3>
                             <p class="text-secondary font-semibold">2021 - Actualidad</p>
                         </div>
-                        
+
                         <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
                         <div class="md:hidden absolute left-5 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-lg z-10"></div>
-                        
+
                         <div class="md:w-5/12 pl-8 md:pl-8 ml-8 md:ml-0">
                             <div class="bg-white p-6 rounded-2xl shadow-lg hover-lift">
                                 <div class="md:hidden mb-2">
@@ -363,10 +364,10 @@
                             <h3 class="font-serif text-xl font-bold text-primary">Minor en Análisis de Datos</h3>
                             <p class="text-secondary font-semibold">Actualidad</p>
                         </div>
-                        
+
                         <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
                         <div class="md:hidden absolute left-5 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10"></div>
-                        
+
                         <div class="md:w-5/12 pr-8 md:text-right pl-8 md:pl-0 ml-8 md:ml-0 md:mr-8">
                             <div class="bg-white p-6 rounded-2xl shadow-lg hover-lift text-left md:text-right">
                                 <div class="md:hidden mb-2">
@@ -387,10 +388,10 @@
                             <h3 class="font-serif text-xl font-bold text-primary">Licenciado en Ciencias de la Ingeniería</h3>
                             <p class="text-secondary font-semibold">2025</p>
                         </div>
-                        
+
                         <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
                         <div class="md:hidden absolute left-5 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10"></div>
-                        
+
                         <div class="md:w-5/12 pl-8 md:pl-8 ml-8 md:ml-0">
                             <div class="bg-white p-6 rounded-2xl shadow-lg hover-lift">
                                 <div class="md:hidden mb-2">
@@ -411,10 +412,10 @@
                             <h3 class="font-serif text-xl font-bold text-primary">Bachillerato de Ciencias y Humanidades</h3>
                             <p class="text-secondary font-semibold">2022</p>
                         </div>
-                        
+
                         <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-400 rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
                         <div class="md:hidden absolute left-5 w-4 h-4 bg-gray-400 rounded-full border-4 border-white shadow-lg z-10"></div>
-                        
+
                         <div class="md:w-5/12 pr-8 md:text-right pl-8 md:pl-0 ml-8 md:ml-0 md:mr-8">
                             <div class="bg-white p-6 rounded-2xl shadow-lg hover-lift text-left md:text-right">
                                 <div class="md:hidden mb-2">
@@ -435,10 +436,10 @@
                             <h3 class="font-serif text-xl font-bold text-primary">Programa del Diploma IB</h3>
                             <p class="text-secondary font-semibold">2017 - 2019</p>
                         </div>
-                        
+
                         <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-400 rounded-full border-4 border-white shadow-lg z-10 hidden md:block"></div>
                         <div class="md:hidden absolute left-5 w-4 h-4 bg-gray-400 rounded-full border-4 border-white shadow-lg z-10"></div>
-                        
+
                         <div class="md:w-5/12 pl-8 md:pl-8 ml-8 md:ml-0">
                             <div class="bg-white p-6 rounded-2xl shadow-lg hover-lift">
                                 <div class="md:hidden mb-2">
@@ -461,7 +462,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="font-serif text-4xl font-bold text-primary mb-4">Experiencia Laboral</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Trayectoria profesional combinando docencia universitaria y experiencia industrial</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Trayectoria profesional combinando docencia universitaria, experiencia industrial y prácticas especializadas</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -509,7 +510,32 @@
                     </div>
                 </div>
 
-                <!-- Job 3 -->
+                <!-- Job 3 - NUEVO: Ayudante Logística -->
+                <div class="group relative bg-slate-50 rounded-2xl p-8 hover-lift overflow-hidden border-2 border-green-400/50" data-aos="fade-up" data-aos-delay="150">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-green-100 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150"></div>
+                    <div class="relative z-10">
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-green-500 text-white text-xs rounded-full font-bold">NUEVO</span>
+                        </div>
+                        <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-6 text-green-600">
+                            <i class="fas fa-truck-loading text-2xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-primary mb-2">Ayudante Logística y Cadenas de Suministro</h3>
+                        <p class="text-secondary font-semibold mb-4">2025 | Universidad de La Frontera</p>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Revisión de talleres y ejercicios prácticos</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Desarrollo de material complementario</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
                 <div class="group relative bg-slate-50 rounded-2xl p-8 hover-lift overflow-hidden" data-aos="fade-up" data-aos-delay="200">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150"></div>
                     <div class="relative z-10">
@@ -531,8 +557,37 @@
                     </div>
                 </div>
 
-                <!-- Job 4 -->
-                <div class="group relative bg-slate-50 rounded-2xl p-8 hover-lift overflow-hidden md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="300">
+                <!-- Job 5 - NUEVO: Sinergia SPA -->
+                <div class="group relative bg-slate-50 rounded-2xl p-8 hover-lift overflow-hidden border-2 border-purple-400/50" data-aos="fade-up" data-aos-delay="250">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-purple-100 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150"></div>
+                    <div class="relative z-10">
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 bg-purple-500 text-white text-xs rounded-full font-bold">NUEVO</span>
+                        </div>
+                        <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6 text-purple-600">
+                            <i class="fas fa-handshake text-2xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-primary mb-2">Práctica de Estudios</h3>
+                        <p class="text-secondary font-semibold mb-4">2025 | Sinergia SPA</p>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Asesoría técnica a MYPES</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Estructuración de costos</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chevron-right text-secondary mt-1 text-xs"></i>
+                                <span>Desarrollo de estrategias comerciales</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 6 -->
+                <div class="group relative bg-slate-50 rounded-2xl p-8 hover-lift overflow-hidden" data-aos="fade-up" data-aos-delay="300">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-orange-100 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150"></div>
                     <div class="relative z-10">
                         <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-6 text-orange-600">
@@ -648,7 +703,7 @@
                             <div class="bg-primary h-2 rounded-full" style="width: 100%"></div>
                         </div>
                     </div>
-                    
+
                     <div class="text-center">
                         <div class="w-20 h-20 mx-auto bg-secondary/10 rounded-full flex items-center justify-center mb-4 text-secondary text-3xl font-bold">
                             DE
@@ -660,7 +715,7 @@
                             <div class="bg-secondary h-2 rounded-full" style="width: 60%"></div>
                         </div>
                     </div>
-                    
+
                     <div class="text-center">
                         <div class="w-20 h-20 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4 text-blue-600 text-3xl font-bold">
                             EN
@@ -679,9 +734,9 @@
     <!-- Contact Section -->
     <section id="contacto" class="py-24 bg-primary text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+            <div class="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
         </div>
-        
+
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up">
             <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">¿Trabajemos juntos?</h2>
             <p class="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
@@ -694,13 +749,13 @@
                     <h3 class="font-semibold mb-2">Email</h3>
                     <p class="text-sm text-blue-100">pame.vonjohnn@gmail.com</p>
                 </a>
-                
+
                 <a href="tel:+56975489215" class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition border border-white/20">
                     <i class="fas fa-phone text-3xl text-secondary mb-4 group-hover:scale-110 transition-transform block"></i>
                     <h3 class="font-semibold mb-2">Teléfono</h3>
                     <p class="text-sm text-blue-100">+56 9 7548 9215</p>
                 </a>
-                
+
                 <div class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                     <i class="fas fa-map-marker-alt text-3xl text-secondary mb-4 block"></i>
                     <h3 class="font-semibold mb-2">Ubicación</h3>
@@ -747,7 +802,7 @@
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
